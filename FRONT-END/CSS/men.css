@@ -1,0 +1,293 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  padding: 0 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ================= TOP BAR ================= */
+
+.top-bar {
+  background-color: #dc143c;
+  color: white;
+  font-size: 13px;
+  text-align: center;
+  padding: 8px 0;
+  font-weight: 500;
+}
+
+/* ================= HEADER ================= */
+
+.main-header {
+  background: white;
+  padding: 15px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+  cursor: pointer;
+}
+
+.search-text {
+  font-size: 14px;
+  color: #333;
+}
+
+.logo-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.logo-img {
+  max-height: 100px;
+  object-fit: contain;
+}
+
+.actions-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 25px;
+  flex: 1;
+}
+
+.action-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.action-item:hover {
+  color: #dc143c;
+}
+
+.icon {
+  width: 22px;
+  height: 22px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+}
+
+/* ================= NAVBAR ================= */
+
+.nav-bar {
+  background: white;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.nav-item {
+  margin: 0 16px;
+}
+
+.nav-link {
+  padding: 18px 0;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.nav-link:hover {
+  color: #dc143c;
+}
+/* TOP BAR */
+.top-bar{
+  background:#dc143c;
+  color:white;
+  text-align:center;
+  padding:8px;
+}
+
+/* HEADER */
+.main-header{
+  padding:15px;
+  border-bottom:1px solid #eee;
+}
+
+.header-content{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+/* NAVBAR */
+.nav-bar{
+  border-bottom:1px solid #eee;
+}
+
+.nav-list{
+  display:flex;
+  justify-content:center;
+  list-style:none;
+  padding:10px;
+  gap:20px;
+}
+
+.products{
+  padding:70px;
+  background:#f5f5f5;
+}
+
+.products h2{
+  text-align:center;
+  margin-bottom:40px;
+  font-size:28px;
+}
+
+.product-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:10px;
+}
+
+.card{
+  text-align:center;
+  border:1px solid #e5e5e5;
+  background:#fff;
+  border-radius:12px;
+  overflow:hidden;
+  position:relative;
+}
+
+.card img{
+  width:500px;
+  height:350px;
+  object-fit:contain;
+  background:#f3f3f3;
+  /* padding:10px; */
+}
+
+.card h3{
+  margin:10px;
+  font-size:16px;
+}
+
+.new{
+  font-weight:bold;
+}
+
+.old{
+  text-decoration:line-through;
+  color:gray;
+  margin-left:6px;
+}
+
+.card button{
+  background:black;
+  color:white;
+  padding:12px;
+  width:90%;
+  margin:15px auto 20px;
+  border:none;
+  border-radius:6px;
+  cursor:pointer;
+}
+
+.card button:hover{
+  background:#e53935;
+}
+
+.badge{
+  position:absolute;
+  top:10px;
+  left:10px;
+  background:black;
+  color:white;
+  padding:4px 8px;
+  font-size:12px;
+  border-radius:4px;
+}
+
+.badge.sale{
+  background:#e53935;
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+  background-color: #f3e7e5;
+  padding: 40px 20px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #ddd;
+}
+
+.footer-main {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 220px;
+}
+
+.footer-column h4 {
+  margin-bottom: 15px;
+}
+
+.footer-column ul {
+  list-style: none;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.footer-column input {
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0;
+}
+
+.footer-column button {
+  padding: 8px 15px;
+  background: #1b1b1b;
+  color: #fff;
+  border: none;
+}
